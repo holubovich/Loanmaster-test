@@ -1,0 +1,130 @@
+.navbar {
+  background-color: rgba(34, 34, 34, 0.5);
+  padding: 20px 41px 14px 90px;
+  height: auto;
+
+}
+
+.navbar-header {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 24px;
+  font-style: oblique;
+  color: $white;
+  padding: 0;
+}
+
+.navbar-brand {
+  color: $white;
+  padding-top: 28px;
+}
+
+.nav {
+  @media #{$tablet-mobile} {
+    flex-direction: column;
+  }
+  @media #{$desktop} {
+    flex-direction: column;
+
+  }
+  @media #{$desktop-large} {
+    flex-direction: row;
+
+  }
+}
+
+.nav-link {
+  color: $white;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  top: 20%;
+  margin-top: -8px;
+
+}
+
+button {
+  position: relative;
+  width: 3em;
+  height: 3em;
+}
+
+button:focus {
+  outline: none;
+}
+
+.navbar-toggler {
+  z-index: 2;
+}
+
+.navbar-toggler span {
+  width: 1.19em;
+  display: block;
+  height: 2px;
+  margin: 0.3em;
+  background: $green;
+  z-index: 1;
+  transform-origin: top left;
+  transition: transform 0.5s cubic-bezier(0.0, 0.2, 0.05, 1.0),
+  background 0.5s cubic-bezier(0.0, 0.2, 0.05, 1.0),
+  opacity 0.55s ease;
+}
+
+/*parent last line*/
+
+.navbar-toggler span:first-child {
+  width: 1.5em;
+  background: $green;
+}
+
+/*first line*/
+
+.navbar-toggler span:nth-last-child(2) {
+  width: 0.7em;
+  background: $white;
+}
+
+/*----TOGGLER TRANSOFRMATION----*/
+
+/* Transform all the slices of hamburger*/
+.navbar-toggler[aria-expanded="true"] span:first-child {
+  width: 1.19em;
+  opacity: 1;
+  transform: rotate(45deg);
+  background: $white;
+}
+
+/* hide the middle one. */
+.navbar-toggler[aria-expanded="true"] span:nth-last-child(2) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/* and the last one */
+.navbar-toggler[aria-expanded="true"] span {
+  width: 1.19em;
+  background: $white;
+  transform: rotate(-45deg) translateX(-1.5px); /*translateX is used to make start-point (approximately)equals the first one*/
+  border-radius: 1px;
+}
+
+/* UL TAG STYLE */
+
+.menu ul li a {
+  display: flex;
+  padding: .625em;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* <LI> AND <A> */
+.menu ul li a:hover {
+  color: $green-light;
+  cursor: pointer;
+  transition: .1s;
+}
+
+.menu ul li a:active {
+  color: $green-light;
+}

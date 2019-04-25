@@ -1,0 +1,232 @@
+.footer {
+  height: 145px;
+  @media #{$mobile} {
+    background: #3f3cb9;
+    background: linear-gradient(180deg, rgba(63, 60, 185, 1) 1%, rgba(63, 60, 185, 1) 44%, rgba(63, 60, 185, 1) 53%, rgba(41, 39, 118, 1) 66%, rgba(41, 39, 118, 1) 99%);
+    height: auto;
+  }
+  @media #{$tablet} {
+    background: #3f3cb9;
+    background: linear-gradient(180deg, rgba(63, 60, 185, 1) 1%, rgba(63, 60, 185, 1) 44%, rgba(63, 60, 185, 1) 53%, rgba(41, 39, 118, 1) 66%, rgba(41, 39, 118, 1) 99%);
+    height: auto;
+  }
+  @media #{$desktop} {
+    background: #3f3cb9;
+    background: linear-gradient(90deg, #3f3cb9 71%, #292776 30%);
+    height: auto;
+  }
+  @media #{$desktop-large} {
+    background: #3f3cb9;
+    background: linear-gradient(90deg, #3f3cb9 65%, #292776 30%);
+    background: -webkit-linear-gradient(90deg, #3f3cb9 65%, #292776 30%);
+    background: -moz-linear-gradient(90deg, #3f3cb9 65%, #292776 30%);
+    height: auto;
+  }
+}
+
+.forms {
+  display: flex;
+  padding: 28px 23px 45px 90px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+
+}
+
+.form {
+  display: contents;
+}
+
+.form-group {
+  margin-bottom: 0;
+  margin-left: -11px;
+}
+
+.form-control {
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border: 0px solid #000000;
+  height: 46px;
+  box-shadow: 4px 4px 29px 4px rgba(0, 0, 0, 0.27);
+  -webkit-box-shadow: 4px 4px 29px 4px rgba(0, 0, 0, 0.27);
+  -moz-box-shadow: 4px 4px 29px 4px rgba(0, 0, 0, 0.27);
+  font-size: 16px;
+
+}
+
+#exampleInputName1 {
+  margin-left: 0;
+  @media #{$mobile} {
+    width: 130px;
+  }
+  @media #{$tablet} {
+    width: 130px;
+  }
+  @media #{$desktop} {
+    width: 130px;
+
+  }
+  @media #{$desktop-large} {
+    width: 180px;
+  }
+}
+
+#exampleInputEmail1 {
+  width: 250px;
+  margin-left: -11px;
+  @media #{$mobile} {
+    width: 180px;
+  }
+  @media #{$tablet} {
+    width: 200px;
+  }
+  @media #{$desktop} {
+    width: 200px;
+
+  }
+  @media #{$desktop-large} {
+    width: 250px;
+  }
+}
+
+#exampleInputZip1 {
+  margin-left: -11px;
+  @media #{$mobile} {
+    width: 130px;
+  }
+  @media #{$tablet} {
+    width: 130px;
+  }
+  @media #{$desktop} {
+    width: 130px;
+
+  }
+  @media #{$desktop-large} {
+    width: 180px;
+  }
+
+}
+
+#exampleFormControlSelect1 {
+  background-color: $green-light;
+  color: $white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: -11px;
+  @media #{$mobile} {
+    width: 130px;
+  }
+  @media #{$tablet} {
+    width: 130px;
+  }
+  @media #{$desktop} {
+    width: 130px;
+
+  }
+  @media #{$desktop-large} {
+    width: 180px;
+  }
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  border: 2px solid white;
+  background: url('../../images/arrow.png');
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position-y: center;
+  background-position-x: right;
+  background-position: 146px;
+
+}
+
+.btn {
+  background: #08e9b1;
+  background: linear-gradient(336deg, #08e9b1 10%, #37bb3d 90%);
+  background: -webkit-linear-gradient(336deg, #08e9b1 10%, #37bb3d 90%);
+  background: -moz-linear-gradient(336deg, #08e9b1 10%, #37bb3d 90%);
+  border-radius: 13px;
+  -moz-border-radius: 13px;
+  -webkit-border-radius: 13px;
+  border: 0px solid #000000;
+  box-shadow: 7px 7px 29px 7px rgba(0, 0, 0, 0.57);
+  -webkit-box-shadow: 7px 7px 29px 7px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 7px 7px 29px 7px rgba(0, 0, 0, 0.57);
+
+  @media #{$mobile} {
+    height: 60px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  @media #{$tablet} {
+    height: 60px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+  }
+  @media #{$desktop} {
+    font-weight: 900;
+    font-size: 18px;
+    height: 75px;
+    width: 100%;
+
+  }
+  @media #{$desktop-large} {
+    height: 75px;
+    width: 375px;
+    font-size: 18px;
+    font-weight: 900;
+  }
+}
+
+.button {
+  display: flex;
+  justify-content: space-around;
+  @media #{$tablet}{
+    margin: 0 auto;
+  }
+}
+
+.footer-button {
+
+  @media #{$tablet}{
+    padding-top: 36px;
+    width: 100%;
+
+  }
+  @media #{$desktop}{
+    padding-top: 36px;
+    width: 100%;
+  }
+  @media #{$desktop-large}{
+    padding: 38px 10px;
+    width: 100%;
+  }
+}
+
+.footer-text {
+  font-size: 9px;
+  color: $white;
+  font-weight: 300;
+  padding-top: 13px;
+  padding-bottom: 10px;
+
+  @media #{$mobile} {
+    text-align: center;
+
+  }
+  @media #{$tablet} {
+    text-align: center;
+
+  }
+}

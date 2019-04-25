@@ -1,0 +1,114 @@
+
+.content {
+  padding-left: 90px;
+  padding-bottom: 90px;
+
+  @media #{$tablet-mobile} {
+    padding-bottom: 40px;
+
+  }
+  @media #{$desktop} {
+    padding-bottom: 50px;
+
+  }
+  @media #{$desktop-large} {
+    padding-left: 90px;
+    padding-bottom: 90px;
+
+  }
+}
+
+ul.check {
+  cursor: pointer;
+  list-style-type: none;
+  color: white;
+  font-size: 16.94px;
+  font-weight: 400;
+  padding: 0;
+
+  @media #{$tablet-mobile} {
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+  }
+  @media #{$desktop} {
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+  }
+  @media #{$desktop-large} {
+    padding-top: 33px;
+    padding-bottom: 37px;
+
+  }
+  li {
+    @media #{$tablet-mobile} {
+      padding-top: 10px;
+    }
+    @media #{$desktop} {
+      padding-top: 15px;
+
+    }
+    @media #{$desktop-large} {
+      padding-top: 24px;
+
+    }
+  }
+}
+
+svg {
+  vertical-align: text-bottom;
+}
+
+.text {
+  color: $white;
+  text-transform: uppercase;
+}
+
+.simple {
+  font-size: 41px;
+  font-weight: 300;
+  line-height: 40px;
+  padding-top: -62px;
+  margin-top: -32px;
+  margin-bottom: 20px;
+
+  @media #{$tablet-mobile} {
+    font-size: 25px;
+    padding-top: 50px;
+
+  }
+  @media #{$desktop} {
+    font-size: 30px;
+    padding-top: 50px;
+
+  }
+  @media #{$desktop-large} {
+    font-size: 41px;
+    padding-top: 50px;
+  }
+}
+
+.start {
+  font-size: 27px;
+  font-weight: 700;
+  border: 3px solid #20b45e;
+  padding: 2px 10px;
+  width: 546px;
+  margin: 0;
+
+  @media #{$tablet-mobile} {
+    font-size: 15px;
+    width: 315px;
+  }
+  @media #{$desktop} {
+    font-size: 18px;
+    width: 373px;
+
+  }
+  @media #{$desktop-large} {
+    font-size: 27px;
+    width: 546px;
+  }
+
+}
